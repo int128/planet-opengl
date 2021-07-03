@@ -7,8 +7,13 @@
 #ifndef _E2_GLWRAPPER_H_
 #define _E2_GLWRAPPER_H_
 
+#if defined(__APPLE__)
+#include <OpenGL/gl.h>
+#include <GLUT/glut.h>
+#else
 #include <GL/gl.h>
 #include <GL/glut.h>
+#endif
 
 
 /* 光源設定値 */

@@ -1,6 +1,6 @@
-CC=gcc
-CFLAGS=-Wall -pipe -DWIN32
-LDLIBS=-lglut32 -lglu32 -lopengl32 #-mno-cygwin
+CC=cc
+CFLAGS=-Wall -pipe -DGL_SILENCE_DEPRECATION
+LDLIBS=-framework GLUT -framework OpenGL
 
 .PHONY: all clean
 

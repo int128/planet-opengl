@@ -1,5 +1,10 @@
+#if defined(__APPLE__)
+#include <OpenGL/gl.h>
+#include <GLUT/glut.h>
+#else
 #include <GL/gl.h>
 #include <GL/glut.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -158,7 +163,7 @@ void display(void)
 
 void initializeTexture()
 {
-  GLuint textureIDs[3];
+  GLuint textureIDs[5];
   
   glEnable(GL_TEXTURE_2D);
   glEnable(GL_AUTO_NORMAL);

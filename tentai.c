@@ -4,8 +4,13 @@
  * Author:  Hidetake Iwata
  * Time-stamp:  <2003-07-18 21:59:10 umeda>
  */
+#if defined(__APPLE__)
+#include <OpenGL/gl.h>
+#include <GLUT/glut.h>
+#else
 #include <GL/gl.h>
 #include <GL/glut.h>
+#endif
 #include <math.h>
 #include "tentai.h"
 

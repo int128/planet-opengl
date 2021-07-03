@@ -7,8 +7,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#if defined(__APPLE__)
+#include <OpenGL/gl.h>
+#include <GLUT/glut.h>
+#else
 #include <GL/gl.h>
 #include <GL/glut.h>
+#endif
 
 #include "glwrapper.h"
 
